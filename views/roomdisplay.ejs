@@ -6,12 +6,12 @@
         <font color="red"><p><%= message %></p></font>
    <% } %>
 <form action="/create/room/<%= userCreated._id %>/<%=  userCreated.username%>" method="POST">
-    <input type="text" name="roomname" placeholder="Enter room name">
+    <input type="text" class="border" name="roomname" placeholder="Enter room name">
     <button class="btn btn-primary">Create Room</button> 
 </form>
 <hr>
 <form action="/join/room/<%= userCreated._id %>/<%=  userCreated.username%>" method="POST">
-    <input type="text" name="roomname" placeholder="Enter room name">
+    <input type="text" name="roomname" class="border" placeholder="Enter room name">
     <button class="btn btn-primary">Join Room</button> 
 </form>
 </center>
